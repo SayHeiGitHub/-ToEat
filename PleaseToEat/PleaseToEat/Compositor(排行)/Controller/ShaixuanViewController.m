@@ -1,23 +1,42 @@
 //
-//  MapViewController.m
+//  ShaixuanViewController.m
 //  PleaseToEat
 //
-//  Created by 姜鸥人 on 16/4/20.
+//  Created by 姜鸥人 on 16/4/21.
 //  Copyright © 2016年 HeiCoder_OR. All rights reserved.
 //
 
-#import "MapViewController.h"
-
-@interface MapViewController ()
+#import "ShaixuanViewController.h"
+#import "shaixuanView.h"
+#define kWidth [UIScreen mainScreen].bounds.size.width
+#define kHight [UIScreen mainScreen].bounds.size.height
+@interface ShaixuanViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation ShaixuanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"选择城市";
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];}
+    
+    
+    self.shauxuan = [[shaixuanView alloc]initWithFrame:CGRectMake(-2, 0, kWidth+4, (kHight-64)*1/2+15)];
+
+    
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStylePlain target:self action:@selector(rightBtnAction:)];
+    [self.navigationItem setRightBarButtonItem:rightButton];
+    UIView *view  = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    view.backgroundColor = [UIColor greenColor];
+    
+      self.tableView.separatorStyle = NO;
+    [self.view addSubview:self.shauxuan];
+}
+
+-(void)rightBtnAction:(UIBarButtonItem *)sender{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -27,12 +46,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+#warning Incomplete implementation, return the number of rows
     return 0;
 }
 

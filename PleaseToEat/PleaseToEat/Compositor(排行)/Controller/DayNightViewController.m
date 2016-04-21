@@ -1,23 +1,66 @@
 //
-//  MapViewController.m
+//  DayNightViewController.m
 //  PleaseToEat
 //
-//  Created by 姜鸥人 on 16/4/20.
+//  Created by 姜鸥人 on 16/4/21.
 //  Copyright © 2016年 HeiCoder_OR. All rights reserved.
 //
 
-#import "MapViewController.h"
-
-@interface MapViewController ()
+#import "DayNightViewController.h"
+#import "TextFileViewController.h"
+#import "ShaixuanViewController.h"
+@interface DayNightViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation DayNightViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"选择城市";
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];}
+    self.navigationItem.title = @"返回";
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(leftAction:)];
+    [self.navigationItem setRightBarButtonItem:leftButton];
+    
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40);
+    [btn setTitle:@"我有故事,你有酒吗?" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    btn.titleEdgeInsets = UIEdgeInsetsMake(3, 5, 3, 250);
+    btn.adjustsImageWhenHighlighted = YES;
+    UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(380, 13, 15, 15)];
+//    image.backgroundColor =[ UIColor redColor];
+    image.image = [UIImage imageNamed:@"leisure_edit"];
+    image.userInteractionEnabled = NO;
+    [btn addSubview:image];
+   
+
+    
+    
+    
+    self.tableView.tableHeaderView = btn;
+}
+
+
+-(void)leftAction:(UIBarButtonItem *)sender{
+    ShaixuanViewController *shaixuan = [[ShaixuanViewController alloc]init];
+    [self.navigationController pushViewController:shaixuan animated:YES];
+    
+    
+    
+}
+
+
+-(void)btnAction:(UIButton *)sender{
+    TextFileViewController *text = [[TextFileViewController alloc]init];
+//    UINavigationController *textNV = [[UINavigationController alloc]initWithRootViewController:text];
+//    [self presentViewController:textNV animated:YES completion:nil];
+    [self.navigationController pushViewController:text animated:YES];
+    NSLog(@"点击了");
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -27,12 +70,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+#warning Incomplete implementation, return the number of rows
     return 0;
 }
 

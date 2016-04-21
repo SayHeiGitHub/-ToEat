@@ -1,23 +1,40 @@
 //
-//  MapViewController.m
+//  DetailsViewController.m
 //  PleaseToEat
 //
-//  Created by 姜鸥人 on 16/4/20.
+//  Created by 姜鸥人 on 16/4/21.
 //  Copyright © 2016年 HeiCoder_OR. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "DetailsViewController.h"
 
-@interface MapViewController ()
+@interface DetailsViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation DetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"选择城市";
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];}
+    
+   self.navigationItem.title = @"详情";
+    UIBarButtonItem *rightButton1 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"share"] style:UIBarButtonItemStylePlain target:self action:@selector(sharedAction:)];
+    UIBarButtonItem *rightButton2 = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"action_star"] style:UIBarButtonItemStylePlain target:self action:@selector(starAction:)];
+    [self.navigationItem setRightBarButtonItems:@[rightButton1,rightButton2]];
+   
+}
+
+// 分享
+-(void)sharedAction:(UIBarButtonItem *)sender{
+    
+}
+// 五角星
+-(void)starAction:(UIBarButtonItem *)sender{
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -27,12 +44,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
+#warning Incomplete implementation, return the number of rows
     return 0;
 }
 

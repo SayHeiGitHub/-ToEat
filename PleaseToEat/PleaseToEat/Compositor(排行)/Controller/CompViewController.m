@@ -9,6 +9,10 @@
 #import "CompViewController.h"
 #import "ScreenViewController.h"
 #import "MapViewController.h"
+#import "HotTableViewCell.h"
+#import "firstTableViewCell.h"
+#import "DayNightViewController.h"
+#import "DetailsViewController.h"
 @interface CompViewController ()
 
 @end
@@ -17,11 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
    self.navigationItem.title = @"返回";
-    UISegmentedControl *seg = [[UISegmentedControl alloc]initWithItems:@[@"热门",@"附近" ]];
+    UISegmentedControl *seg = [[UISegmentedControl alloc]initWithItems:@[@"热门"]];
     seg.tintColor = [UIColor whiteColor];
-    seg.frame = CGRectMake(0, 0, 150, seg.frame.size.height);
+    seg.frame = CGRectMake(0, 0, 100, seg.frame.size.height);
     seg.selectedSegmentIndex = 0;
     seg.layer.cornerRadius = seg.frame.size.height/2;
     seg.layer.borderWidth = 1.0;
@@ -45,7 +48,10 @@
     [rightBut addTarget:self action:@selector(leftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightButtonFirst =[[UIBarButtonItem alloc]initWithCustomView:rightBut];
     self.navigationItem.leftBarButtonItem = rightButtonFirst;
-    
+
+    [self.tableView registerNib:[UINib nibWithNibName:@"HotTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell_idd"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"firstTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell_id"];
+//    [UINib nibWithNibName:@"HotTableViewCell" bundle:[NSBundle mainBundle]];
     
     
 }
@@ -72,12 +78,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+    return 10;
 }
 
 
@@ -87,15 +93,50 @@
 
 
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+  
+    if (indexPath.row == 0) {
+ firstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell_id" forIndexPath:indexPath];
+        return cell;
+    }else{
+          HotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell_idd" forIndexPath:indexPath];
+        cell.floorNum.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+
+        return cell;
+    }
     // Configure the cell...
     
-    return cell;
 }
-*/
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 0) {
+        return 39;
+    }else{
+        return 207;
+        
+    }
+    
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        DayNightViewController * day = [[DayNightViewController alloc]init];
+        [self.navigationController pushViewController:day animated:YES];
+    }else{
+        DetailsViewController *deta = [[DetailsViewController alloc]init];
+        [self.navigationController pushViewController:deta animated:YES];
+        
+    }
+    
+    
+    
+}
+
+
+
 
 /*
 // Override to support conditional editing of the table view.

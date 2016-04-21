@@ -37,15 +37,6 @@
     if ([self.delegatee respondsToSelector:@selector(tabBarDidClickedPlshButton:)]) {
         [self.delegatee tabBarDidClickedPlshButton:self];
     }
-//    static int a = 0;
-//    if (a==0) {
-//        [self.plusButton setImage:[UIImage imageNamed:@"TabIconPublish_"] forState:UIControlStateNormal];
-//        a = 1;
-//    }else{
-////        [self.plusButton setImage:[UIImage imageNamed:@"[#-#]"] forState:UIControlStateNormal];
-//        [self.plusButton setBackgroundImage:[UIImage imageNamed:@"[#ﾟДﾟ]"] forState:UIControlStateNormal];
-//    }
-//    a = 0;
 }
 
 -(void)layoutSubviews{
