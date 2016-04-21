@@ -1,0 +1,8 @@
+platform :ios, "9.2"
+
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'SVProgressHUD'
+pod 'MJExtension'
+pod 'FMDB'
