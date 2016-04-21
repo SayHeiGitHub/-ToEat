@@ -1,5 +1,5 @@
 //
-//  ScreenViewController.h
+//  ScreenView.h
 //  PleaseToEat
 //
 //  Created by lanou3g on 16/4/21.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScreenViewController : UITableViewController
+@interface ScreenView : UIView
 
 @end
