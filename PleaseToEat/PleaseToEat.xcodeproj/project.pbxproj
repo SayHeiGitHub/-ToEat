@@ -27,6 +27,14 @@
 		DA9A25971CC879CE00EC4180 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25961CC879CE00EC4180 /* ContactModel.m */; };
 		DA9A259A1CC879E500EC4180 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25991CC879E500EC4180 /* MessageModel.m */; };
 		DA9A259D1CC879FE00EC4180 /* MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A259C1CC879FE00EC4180 /* MineModel.m */; };
+		DA9A25C31CC8849800EC4180 /* OtherOne.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25C21CC8849800EC4180 /* OtherOne.m */; };
+		DA9A25C61CC884B300EC4180 /* one.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25C51CC884B300EC4180 /* one.m */; };
+		DA9A25C91CC884C300EC4180 /* OntModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25C81CC884C300EC4180 /* OntModel.m */; };
+		DA9A25CF1CC8850200EC4180 /* TowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25CE1CC8850200EC4180 /* TowView.m */; };
+		DA9A25D21CC8851600EC4180 /* mianView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25D11CC8851600EC4180 /* mianView.m */; };
+		DA9A25D51CC8852500EC4180 /* message.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25D41CC8852500EC4180 /* message.m */; };
+		DA9A25D81CC8853900EC4180 /* There.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25D71CC8853900EC4180 /* There.m */; };
+		DA9A25DB1CC8856C00EC4180 /* comview.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A25DA1CC8856C00EC4180 /* comview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +78,22 @@
 		DA9A25991CC879E500EC4180 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		DA9A259B1CC879FE00EC4180 /* MineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModel.h; sourceTree = "<group>"; };
 		DA9A259C1CC879FE00EC4180 /* MineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModel.m; sourceTree = "<group>"; };
+		DA9A25C11CC8849800EC4180 /* OtherOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherOne.h; sourceTree = "<group>"; };
+		DA9A25C21CC8849800EC4180 /* OtherOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherOne.m; sourceTree = "<group>"; };
+		DA9A25C41CC884B300EC4180 /* one.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = one.h; sourceTree = "<group>"; };
+		DA9A25C51CC884B300EC4180 /* one.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = one.m; sourceTree = "<group>"; };
+		DA9A25C71CC884C300EC4180 /* OntModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OntModel.h; sourceTree = "<group>"; };
+		DA9A25C81CC884C300EC4180 /* OntModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OntModel.m; sourceTree = "<group>"; };
+		DA9A25CD1CC8850200EC4180 /* TowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TowView.h; sourceTree = "<group>"; };
+		DA9A25CE1CC8850200EC4180 /* TowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TowView.m; sourceTree = "<group>"; };
+		DA9A25D01CC8851600EC4180 /* mianView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mianView.h; sourceTree = "<group>"; };
+		DA9A25D11CC8851600EC4180 /* mianView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mianView.m; sourceTree = "<group>"; };
+		DA9A25D31CC8852500EC4180 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		DA9A25D41CC8852500EC4180 /* message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = message.m; sourceTree = "<group>"; };
+		DA9A25D61CC8853900EC4180 /* There.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = There.h; path = "../../Message(消息)/View/There.h"; sourceTree = "<group>"; };
+		DA9A25D71CC8853900EC4180 /* There.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = There.m; path = "../../Message(消息)/View/There.m"; sourceTree = "<group>"; };
+		DA9A25D91CC8856C00EC4180 /* comview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comview.h; sourceTree = "<group>"; };
+		DA9A25DA1CC8856C00EC4180 /* comview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = comview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +267,8 @@
 		DA7FD2081CC719E4001C2F40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25C11CC8849800EC4180 /* OtherOne.h */,
+				DA9A25C21CC8849800EC4180 /* OtherOne.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +297,8 @@
 		DA7FD2211CC75CFD001C2F40 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25D01CC8851600EC4180 /* mianView.h */,
+				DA9A25D11CC8851600EC4180 /* mianView.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -278,6 +306,8 @@
 		DA7FD2221CC75CFD001C2F40 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25C71CC884C300EC4180 /* OntModel.h */,
+				DA9A25C81CC884C300EC4180 /* OntModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -285,6 +315,8 @@
 		DA7FD2231CC75CFD001C2F40 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25C41CC884B300EC4180 /* one.h */,
+				DA9A25C51CC884B300EC4180 /* one.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -301,6 +333,8 @@
 		DA7FD2F11CC7CAD8001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25D91CC8856C00EC4180 /* comview.h */,
+				DA9A25DA1CC8856C00EC4180 /* comview.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,6 +351,8 @@
 		DA7FD2F31CC7CAED001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25D61CC8853900EC4180 /* There.h */,
+				DA9A25D71CC8853900EC4180 /* There.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,6 +369,8 @@
 		DA7FD2F51CC7CB10001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25D31CC8852500EC4180 /* message.h */,
+				DA9A25D41CC8852500EC4180 /* message.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,6 +387,8 @@
 		DA7FD2F71CC7CB1A001C2F40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A25CD1CC8850200EC4180 /* TowView.h */,
+				DA9A25CE1CC8850200EC4180 /* TowView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,24 +462,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9A25CF1CC8850200EC4180 /* TowView.m in Sources */,
 				DA7FD21E1CC73370001C2F40 /* TabBar.m in Sources */,
 				DA7FD2151CC72D75001C2F40 /* MessageViewController.m in Sources */,
+				DA9A25D81CC8853900EC4180 /* There.m in Sources */,
 				DA7FD2181CC72DB7001C2F40 /* MineViewController.m in Sources */,
 				DA7FD2FA1CC7CDF4001C2F40 /* ChangeContactController.m in Sources */,
 				DA7FD2FD1CC7D069001C2F40 /* SetingViewController.m in Sources */,
 				DA7FD2121CC72D5D001C2F40 /* ContactViewController.m in Sources */,
 				DA7FD2291CC78625001C2F40 /* ScreenViewController.m in Sources */,
 				DA7FD20C1CC72C0D001C2F40 /* RootController.m in Sources */,
+				DA9A25D51CC8852500EC4180 /* message.m in Sources */,
 				DA9A25941CC8799900EC4180 /* CompModel.m in Sources */,
 				DA9A25971CC879CE00EC4180 /* ContactModel.m in Sources */,
 				DA7FD2521CC7C6DE001C2F40 /* MapViewController.m in Sources */,
 				DA7FD20F1CC72D4E001C2F40 /* CompViewController.m in Sources */,
 				DA7FD24F1CC7B68A001C2F40 /* NavigationViewController.m in Sources */,
+				DA9A25DB1CC8856C00EC4180 /* comview.m in Sources */,
 				DA7FD1E31CC70FC4001C2F40 /* AppDelegate.m in Sources */,
 				DA7FD21B1CC73314001C2F40 /* UIView+Extension.m in Sources */,
 				DA9A259D1CC879FE00EC4180 /* MineModel.m in Sources */,
 				DA7FD1E01CC70FC4001C2F40 /* main.m in Sources */,
+				DA9A25C91CC884C300EC4180 /* OntModel.m in Sources */,
 				DA9A259A1CC879E500EC4180 /* MessageModel.m in Sources */,
+				DA9A25D21CC8851600EC4180 /* mianView.m in Sources */,
+				DA9A25C61CC884B300EC4180 /* one.m in Sources */,
+				DA9A25C31CC8849800EC4180 /* OtherOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
