@@ -28,6 +28,7 @@
     [plusButton setImage:[UIImage imageNamed:@"TabIconPublish_"] forState:UIControlStateNormal];
     [plusButton setImage:[UIImage imageNamed:@"TabIconPublish"] forState:UIControlStateHighlighted];
     [plusButton addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];
+    plusButton.adjustsImageWhenHighlighted = NO;
     [self addSubview:plusButton];
     self.plusButton = plusButton;
     
